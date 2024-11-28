@@ -1,0 +1,37 @@
+PS C:\Users\nunokawa\OneDrive\Desktop> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\nunokawa
+    \OneDrive\Desktop
+
+
+Mode                 LastWriteTime
+----                 -------------
+d-----        2024/11/28     10:03
+
+
+PS C:\Users\nunokawa\OneDrive\Desktop> cd git_challenge 
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> git init
+Initialized empty Git repository in C:/Users/nunokawa/OneDrive/Desktop/git_challenge/.git/
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> echo "Hello,World!">> hello_world.txt
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> git commit -m "hello_world.txtを追加”
+[main (root-commit) dced82b] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt 
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> echo "こんにちは、
+世界！" >> hello_world.txt 
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> git commit -m "日本語訳を追記”
+[main 21f07fa] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\nunokawa\OneDrive\Desktop\git_challenge> git log --oneline
+21f07fa (HEAD -> main) 日本語訳を追
+記
+dced82b hello_world.txtを追加 
